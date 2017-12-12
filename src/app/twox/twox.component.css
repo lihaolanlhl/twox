@@ -1,0 +1,16 @@
+.input-full-width {
+  width: 100%;
+}
+
+.twox-card {
+  width: 400px;
+}
+
+.twox-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.input-full-width {
+  width: 100%;
+}

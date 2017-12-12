@@ -1,0 +1,36 @@
+<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
+  <div fxFlex style="padding: 24px;">
+    <mat-card class="twox-card">
+      <mat-card-header>
+        <div mat-card-avatar class="twox-header-image"></div>
+        <mat-card-title>{{ title }}</mat-card-title>
+        <mat-card-subtitle>Enlarge Your Image!</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-form-field class="input-full-width">
+          <input matInput [(ngModel)]="twox.URL" placeholder="Image URL">
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button (click)="twox.printURL();twox.start()">OK</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <div fxFlex style="padding: 24px;">
+    <mat-card class="output-card">
+      <mat-card-header>
+        <div mat-card-avatar class="output-header-image"></div>
+        <mat-card-title>{{ title }}</mat-card-title>
+        <mat-card-subtitle>Output Your Image!</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <canvas id="inCanvas" style="border:2px solid #2196F3">
+          HTML5 UNSUPPORTED
+        </canvas>
+        <canvas id="outCanvas" style="border:2px solid #2196F3">
+          HTML5 UNSUPPORTED
+        </canvas>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
